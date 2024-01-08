@@ -2,6 +2,7 @@
 using ECommerceMVC.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using ECommerceMVC.Helpers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ECommerceMVC.Controllers
 {
@@ -16,11 +17,13 @@ namespace ECommerceMVC.Controllers
 
         public List<CartItem> Cart => HttpContext.Session.Get<List<CartItem>>(MySetting.CART_KEY) ?? new List<CartItem>();
 
+        [Authorize]
         public IActionResult Index()
         {
             return View(Cart);
         }
 
+        [Authorize]
         public IActionResult AddToCart(int id, int quantity = 1)
         {
             var gioHang = Cart;
@@ -53,6 +56,7 @@ namespace ECommerceMVC.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize]
         public IActionResult RemoveCart(int id)
         {
             var gioHang = Cart;
