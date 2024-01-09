@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <History>True|2024-01-09T09:51:57.3346551Z;True|2024-01-09T16:05:27.9369556+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="HShop">
+      <Value>Data Source=SQL5102.site4now.net%3bInitial Catalog=db_aa3d9e_tommytrinh%3bPersist Security Info=True%3bUser ID=db_aa3d9e_tommytrinh_admin%3bPassword=tr1nhtu%40n</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\ECommerceMVC.bundle.scp.css"
     },
     {
-      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\404.html",
-      "PackagePath": "staticwebassets\\404.html"
-    },
-    {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\HangHoa\\1009.gif",
       "PackagePath": "staticwebassets\\Hinh\\HangHoa\\1009.gif"
     },
@@ -1209,18 +1205,6 @@
       "PackagePath": "staticwebassets\\Hinh\\icons\\vit.gif"
     },
     {
-      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\cart.html",
-      "PackagePath": "staticwebassets\\cart.html"
-    },
-    {
-      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\chackout.html",
-      "PackagePath": "staticwebassets\\chackout.html"
-    },
-    {
-      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\contact.html",
-      "PackagePath": "staticwebassets\\contact.html"
-    },
-    {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
@@ -1233,8 +1217,12 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\123.jpg",
+      "PackagePath": "staticwebassets\\img\\123.jpg"
+    },
+    {
+      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\461ba892c56a8611bfeae5e77a5c010b.jpg",
+      "PackagePath": "staticwebassets\\img\\461ba892c56a8611bfeae5e77a5c010b.jpg"
     },
     {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\avatar.jpg",
@@ -1277,6 +1265,10 @@
       "PackagePath": "staticwebassets\\img\\cart-page-header-img.jpg"
     },
     {
+      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\cole-palmer-TUAN.jpg",
+      "PackagePath": "staticwebassets\\img\\cole-palmer-TUAN.jpg"
+    },
+    {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\featur-1.jpg",
       "PackagePath": "staticwebassets\\img\\featur-1.jpg"
     },
@@ -1313,6 +1305,10 @@
       "PackagePath": "staticwebassets\\img\\fruite-item-6.jpg"
     },
     {
+      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\having meal.jpg",
+      "PackagePath": "staticwebassets\\img\\having meal.jpg"
+    },
+    {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img-1.png",
       "PackagePath": "staticwebassets\\img\\hero-img-1.png"
     },
@@ -1331,10 +1327,6 @@
     {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\single-item.jpg",
       "PackagePath": "staticwebassets\\img\\single-item.jpg"
-    },
-    {
-      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\testimonial-1.jpg",
-      "PackagePath": "staticwebassets\\img\\testimonial-1.jpg"
     },
     {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\vegetable-item-1.jpg",
@@ -1359,10 +1351,6 @@
     {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\vegetable-item-6.jpg",
       "PackagePath": "staticwebassets\\img\\vegetable-item-6.jpg"
-    },
-    {
-      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
     },
     {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\js\\main.js",
@@ -2011,18 +1999,6 @@
     {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
-    },
-    {
-      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\shop-detail.html",
-      "PackagePath": "staticwebassets\\shop-detail.html"
-    },
-    {
-      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\shop.html",
-      "PackagePath": "staticwebassets\\shop.html"
-    },
-    {
-      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\testimonial.html",
-      "PackagePath": "staticwebassets\\testimonial.html"
     },
     {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\vegetable-website-template.jpg",

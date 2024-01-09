@@ -21,6 +21,11 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="wwwroot\Hinh\HangHoa\" />
+    <Folder Include="wwwroot\Hinh\icons\" />
+    <Folder Include="wwwroot\Hinh\Loai\" />
+    <Folder Include="wwwroot\Hinh\NhaCC\" />
+    <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
   <ItemGroup>
