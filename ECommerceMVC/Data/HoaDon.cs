@@ -23,6 +23,7 @@ namespace ECommerceMVC.Data
         public int MaTrangThai { get; set; }
         public string? MaNv { get; set; }
         public string? GhiChu { get; set; }
+        public string? DienThoai { get; set; }
 
         public virtual KhachHang MaKhNavigation { get; set; } = null!;
         public virtual NhanVien? MaNvNavigation { get; set; }

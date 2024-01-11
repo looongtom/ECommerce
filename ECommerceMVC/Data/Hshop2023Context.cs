@@ -35,14 +35,14 @@ namespace ECommerceMVC.Data
         public virtual DbSet<VChiTietHoaDon> VChiTietHoaDons { get; set; } = null!;
         public virtual DbSet<YeuThich> YeuThiches { get; set; } = null!;
 
-//        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//        {
-//            if (!optionsBuilder.IsConfigured)
-//            {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-//                optionsBuilder.UseSqlServer("Data Source=DESKTOP-7BMV341\\CSDLPTTEST;Initial Catalog=Hshop2023;Persist Security Info=True;User ID=sa;Password=88888888");
-//            }
-//        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-7BMV341\\CSDLPTTEST;Initial Catalog=Hshop2023;Persist Security Info=True;User ID=sa;Password=88888888");
+            }
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -224,6 +224,8 @@ namespace ECommerceMVC.Data
                     .HasDefaultValueSql("(N'Airline')");
 
                 entity.Property(e => e.DiaChi).HasMaxLength(60);
+
+                entity.Property(e => e.DienThoai).HasMaxLength(24);
 
                 entity.Property(e => e.GhiChu).HasMaxLength(50);
 

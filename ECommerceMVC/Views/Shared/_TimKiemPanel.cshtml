@@ -1,6 +1,21 @@
-﻿<form name="SearchForm" asp-action="Search" asp-controller="HangHoa">
+﻿@{
+    string? query = (string)(Context.Session.GetString("querySearch"));
+}
+<form name="SearchForm" asp-action="Index" asp-controller="HangHoa">
 	<div class="input-group w-100 mx-auto d-flex">
-		<input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="searchButton" name="query" id="searchText">
+        @{
+        if (query != "")
+        {
+                <input type="search" class="form-control p-3" aria-describedby="searchButton" name="querySearch" id="searchText" value="@query">
+
+        }
+        else
+        {
+                <input type="search" class="form-control p-3" aria-describedby="searchButton" name="querySearch" id="searchText" placeholder="Search">
+
+        }
+        }
+        @* <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="searchButton" name="querySearch" id="searchText"> *@
 		<span id="searchButton" class="input-group-text p-3" onclick="SearchForm.submit()"><i class="fa fa-search"></i></span>
 	</div>
 </form>

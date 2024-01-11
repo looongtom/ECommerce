@@ -7,5 +7,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword />
+    <_PublishTargetUrl>ftp://win5045.site4now.net:21/e-commerce</_PublishTargetUrl>
+    <History>False|2024-01-10T03:17:42.7712381Z;False|2024-01-10T01:30:24.5417262+07:00;False|2024-01-10T01:29:36.9938283+07:00;</History>
+    <LastFailureDetails />
   </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="HShop">
+      <Value>Data Source=SQL5102.site4now.net%3bInitial Catalog=db_aa3d9e_tommytrinh%3bPersist Security Info=True%3bUser ID=db_aa3d9e_tommytrinh_admin%3bPassword=tr1nhtu%40n</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
 </Project>

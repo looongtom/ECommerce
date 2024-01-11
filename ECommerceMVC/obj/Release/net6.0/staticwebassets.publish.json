@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SoGPQERr5Lql10nbmVg4ZqV0qG9t7xeccG3B+CboGm8=",
+  "Hash": "bAMRJ9rkdSk9VN9CTvJLU9566XskhTn9kDUObBm0pqg=",
   "Source": "ECommerceMVC",
   "BasePath": "_content/ECommerceMVC",
   "Mode": "Default",
@@ -5406,6 +5406,23 @@
       "OriginalItemSpec": "wwwroot\\img\\cart-page-header-img.jpg"
     },
     {
+      "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\cole-palmer-TUAN.jpg",
+      "SourceId": "ECommerceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
+      "BasePath": "_content/ECommerceMVC",
+      "RelativePath": "img/cole-palmer-TUAN.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\cole-palmer-TUAN.jpg"
+    },
+    {
       "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\featur-1.jpg",
       "SourceId": "ECommerceMVC",
       "SourceType": "Discovered",
@@ -5659,23 +5676,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\single-item.jpg"
-    },
-    {
-      "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\testimonial-1.jpg",
-      "SourceId": "ECommerceMVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
-      "BasePath": "_content/ECommerceMVC",
-      "RelativePath": "img/testimonial-1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\testimonial-1.jpg"
     },
     {
       "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\vegetable-item-1.jpg",

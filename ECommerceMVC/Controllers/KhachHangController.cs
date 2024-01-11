@@ -94,7 +94,7 @@ namespace ECommerceMVC.Controllers
                             {
                                 new Claim(ClaimTypes.Email,khachhang.Email),
                                 new Claim(ClaimTypes.Name,khachhang.HoTen),
-                                new Claim("CustomerID",khachhang.MaKh),
+                                new Claim(MySetting.CLAIM_CUSTOMERID,khachhang.MaKh),
 
                                 //claim - role 
                                 new Claim(ClaimTypes.Role,"Customer")   

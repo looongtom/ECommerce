@@ -1205,6 +1205,10 @@
       "PackagePath": "staticwebassets\\Hinh\\icons\\vit.gif"
     },
     {
+      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\chackout.html",
+      "PackagePath": "staticwebassets\\chackout.html"
+    },
+    {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
@@ -1223,6 +1227,10 @@
     {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\461ba892c56a8611bfeae5e77a5c010b.jpg",
       "PackagePath": "staticwebassets\\img\\461ba892c56a8611bfeae5e77a5c010b.jpg"
+    },
+    {
+      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\62be01d4d2b9b25161b14bdc_6088aa5e500d043933821ce9_Green_Ethical_Sustainable_Retail_shutterstock_1698156682.jpeg",
+      "PackagePath": "staticwebassets\\img\\62be01d4d2b9b25161b14bdc_6088aa5e500d043933821ce9_Green_Ethical_Sustainable_Retail_shutterstock_1698156682.jpeg"
     },
     {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\avatar.jpg",
@@ -1317,8 +1325,20 @@
       "PackagePath": "staticwebassets\\img\\hero-img-2.jpg"
     },
     {
-      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img.jpg",
-      "PackagePath": "staticwebassets\\img\\hero-img.jpg"
+      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img.JPG",
+      "PackagePath": "staticwebassets\\img\\hero-img.JPG"
+    },
+    {
+      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img1.jpg",
+      "PackagePath": "staticwebassets\\img\\hero-img1.jpg"
+    },
+    {
+      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img2 (2).jpg",
+      "PackagePath": "staticwebassets\\img\\hero-img2 (2).jpg"
+    },
+    {
+      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img3.jpg",
+      "PackagePath": "staticwebassets\\img\\hero-img3.jpg"
     },
     {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\payment.png",
