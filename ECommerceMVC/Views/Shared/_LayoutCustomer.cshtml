@@ -71,7 +71,7 @@
                         <div class="navbar-nav mx-auto">
                             <a href="/" class="nav-item nav-link active">Trang chủ</a>
                             <a asp-controller="HangHoa" asp-action="Index" class="nav-item nav-link">Mua sắm</a>
-                            <a href="#" class="nav-item nav-link">Đơn hàng đã mua</a>
+                            <a asp-controller="Order" asp-action="History" asp-route-id="@CustomerID" class="nav-item nav-link">Danh sách đơn hàng</a>
 
                             <a asp-controller="KhachHang" asp-action="DangKy" class="nav-item nav-link">Đăng ký</a>
 

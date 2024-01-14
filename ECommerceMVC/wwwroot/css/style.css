@@ -495,3 +495,7 @@
 }
 /*** Footer End ***/
 
+.productInOrderHistory {
+    display: inline-flex;
+    align-items: flex-end;
+}

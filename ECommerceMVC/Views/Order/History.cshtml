@@ -1,0 +1,92 @@
+﻿@model IEnumerable<ECommerceMVC.ViewModels.HoaDonVM>
+@{
+    ViewData["Title"] = "History";
+}
+
+<!-- Cart Page Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Mã đơn hàng</th>
+                        <th scope="col">Sản phẩm được mua</th>
+                        <th scope="col">Ngày đặt</th>
+                        <th scope="col">Trạng thái</th>
+                        <th scope="col">Tổng tiền</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            @*                         <th scope="row">
+                        <div class="d-flex align-items-center">
+                        <img src="img/vegetable-item-3.png" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;" alt="">
+                        </div>
+                        </th>
+                        *@
+
+                            <td>
+                                <p class="mb-0 mt-4">@item.MaHd</p>
+                            </td>
+                            <td style=" display:flex; flex-direction:column">
+                                @if (item.ChiTietHd.Count <= 2)
+                                {
+                                    foreach (var hinh in item.ChiTietHd)
+                                    {
+                                        <a href="#" style="display: inline-flex; align-items: flex-end;">
+                                            <img src="~/Hinh/HangHoa/@hinh.Hinh" style="width: 80px; height: 80px;" alt="@hinh.TenHh">
+                                            <p>@hinh.TenHh</p>
+                                        </a>
+
+                                    }
+                                }
+                                else
+                                {
+                                    <a href="#" style="display: inline-flex; align-items: flex-end;">
+                                        <img src="~/Hinh/HangHoa/@item.ChiTietHd[0].Hinh" style="width: 80px; height: 80px;" alt="@item.ChiTietHd[0].TenHh">
+                                        <p>@item.ChiTietHd[0].TenHh</p>
+                                    </a>
+
+                                    <a href="#" style="display: inline-flex; align-items: flex-end;">
+                                        <img src="~/Hinh/HangHoa/@item.ChiTietHd[1].Hinh" style="width: 80px; height: 80px;" alt="@item.ChiTietHd[1].TenHh">
+                                        <p>
+                                            @item.ChiTietHd[0].TenHh
+                                        </p>
+                                    </a>
+
+                                    <a href="#" >
+                                        <p style="font-weight: bold">+@(item.ChiTietHd.Count - 2) more</p>
+                                        <p style="font-weight: bold">...</p>
+
+                                    </a>
+                                }
+
+                            </td>
+
+                            <td>
+                                <p class="mb-0 mt-4">@item.NgayDat</p>
+                            </td>
+                            <td>
+                                <p class="mb-0 mt-4">@item.TrangThai</p>
+                            </td>
+                            <td>
+                                <p class="mb-0 mt-4">@item.TongTien $</p>
+                            </td>
+                            <td>
+                                <button class="btn btn-md rounded-circle bg-light border mt-4">
+                                    Chi tiết
+                                </button>
+                            </td>
+                        </tr>
+
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Cart Page End -->

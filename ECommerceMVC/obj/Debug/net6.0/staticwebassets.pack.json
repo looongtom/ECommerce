@@ -1325,12 +1325,12 @@
       "PackagePath": "staticwebassets\\img\\hero-img-2.jpg"
     },
     {
-      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img.JPG",
-      "PackagePath": "staticwebassets\\img\\hero-img.JPG"
+      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img.jpg",
+      "PackagePath": "staticwebassets\\img\\hero-img.jpg"
     },
     {
-      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img1.jpg",
-      "PackagePath": "staticwebassets\\img\\hero-img1.jpg"
+      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img11.JPG",
+      "PackagePath": "staticwebassets\\img\\hero-img11.JPG"
     },
     {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img2 (2).jpg",
@@ -1339,6 +1339,10 @@
     {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img3.jpg",
       "PackagePath": "staticwebassets\\img\\hero-img3.jpg"
+    },
+    {
+      "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\more.png",
+      "PackagePath": "staticwebassets\\img\\more.png"
     },
     {
       "Id": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\payment.png",

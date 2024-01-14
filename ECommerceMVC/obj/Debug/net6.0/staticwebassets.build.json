@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "z2m5pxMUW773Jbt5I+yjbYdKsfIqfloRg+jU4Y6YL7o=",
+  "Hash": "okqutqQeGwnptZ6NS63F9AA7yxj1axx+LdRdPORckAM=",
   "Source": "ECommerceMVC",
   "BasePath": "_content/ECommerceMVC",
   "Mode": "Default",
@@ -5627,12 +5627,12 @@
       "OriginalItemSpec": "wwwroot\\img\\having meal.jpg"
     },
     {
-      "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img.JPG",
+      "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img.jpg",
       "SourceId": "ECommerceMVC",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
       "BasePath": "_content/ECommerceMVC",
-      "RelativePath": "img/hero-img.JPG",
+      "RelativePath": "img/hero-img.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -5641,24 +5641,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\hero-img.JPG"
-    },
-    {
-      "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img1.jpg",
-      "SourceId": "ECommerceMVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
-      "BasePath": "_content/ECommerceMVC",
-      "RelativePath": "img/hero-img1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\hero-img1.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\hero-img.jpg"
     },
     {
       "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img-1.png",
@@ -5676,6 +5659,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\hero-img-1.png"
+    },
+    {
+      "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img11.JPG",
+      "SourceId": "ECommerceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
+      "BasePath": "_content/ECommerceMVC",
+      "RelativePath": "img/hero-img11.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\hero-img11.JPG"
     },
     {
       "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img2 (2).jpg",
@@ -5727,6 +5727,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\hero-img3.jpg"
+    },
+    {
+      "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\more.png",
+      "SourceId": "ECommerceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
+      "BasePath": "_content/ECommerceMVC",
+      "RelativePath": "img/more.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\more.png"
     },
     {
       "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\payment.png",

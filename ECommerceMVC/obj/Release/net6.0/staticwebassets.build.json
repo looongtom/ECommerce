@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dhsV2IuZIp6p85fnDz9ddzCWVD3FWFVMBXzs4obbIww=",
+  "Hash": "nLcEfMdgSH9cJc0fg93AWNEkrXZ+3MHVI9HJTZH1q9s=",
   "Source": "ECommerceMVC",
   "BasePath": "_content/ECommerceMVC",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\ECommerceMVC\\ECommerceMVC\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\ECommerceMVC.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\chackout.html",
+      "SourceId": "ECommerceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
+      "BasePath": "_content/ECommerceMVC",
+      "RelativePath": "chackout.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\chackout.html"
     },
     {
       "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\css\\bootstrap.min.css",
@@ -5236,6 +5253,23 @@
       "OriginalItemSpec": "wwwroot\\img\\461ba892c56a8611bfeae5e77a5c010b.jpg"
     },
     {
+      "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\62be01d4d2b9b25161b14bdc_6088aa5e500d043933821ce9_Green_Ethical_Sustainable_Retail_shutterstock_1698156682.jpeg",
+      "SourceId": "ECommerceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
+      "BasePath": "_content/ECommerceMVC",
+      "RelativePath": "img/62be01d4d2b9b25161b14bdc_6088aa5e500d043933821ce9_Green_Ethical_Sustainable_Retail_shutterstock_1698156682.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\62be01d4d2b9b25161b14bdc_6088aa5e500d043933821ce9_Green_Ethical_Sustainable_Retail_shutterstock_1698156682.jpeg"
+    },
+    {
       "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\avatar.jpg",
       "SourceId": "ECommerceMVC",
       "SourceType": "Discovered",
@@ -5627,6 +5661,40 @@
       "OriginalItemSpec": "wwwroot\\img\\hero-img-1.png"
     },
     {
+      "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img11.JPG",
+      "SourceId": "ECommerceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
+      "BasePath": "_content/ECommerceMVC",
+      "RelativePath": "img/hero-img11.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\hero-img11.JPG"
+    },
+    {
+      "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img2 (2).jpg",
+      "SourceId": "ECommerceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
+      "BasePath": "_content/ECommerceMVC",
+      "RelativePath": "img/hero-img2 (2).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\hero-img2 (2).jpg"
+    },
+    {
       "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img-2.jpg",
       "SourceId": "ECommerceMVC",
       "SourceType": "Discovered",
@@ -5642,6 +5710,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\hero-img-2.jpg"
+    },
+    {
+      "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\hero-img3.jpg",
+      "SourceId": "ECommerceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
+      "BasePath": "_content/ECommerceMVC",
+      "RelativePath": "img/hero-img3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\hero-img3.jpg"
     },
     {
       "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\payment.png",
