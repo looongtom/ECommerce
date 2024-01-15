@@ -37,7 +37,7 @@
                                 {
                                     foreach (var hinh in item.ChiTietHd)
                                     {
-                                        <a href="#" style="display: inline-flex; align-items: flex-end;">
+                                        <a asp-action="Detail" asp-controller="Order" asp-route-id="@item.MaHd" style="display: inline-flex; align-items: flex-end;">
                                             <img src="~/Hinh/HangHoa/@hinh.Hinh" style="width: 80px; height: 80px;" alt="@hinh.TenHh">
                                             <p>@hinh.TenHh</p>
                                         </a>
@@ -46,19 +46,19 @@
                                 }
                                 else
                                 {
-                                    <a href="#" style="display: inline-flex; align-items: flex-end;">
+                                    <a asp-action="Detail" asp-controller="Order" asp-route-id="@item.MaHd" style="display: inline-flex; align-items: flex-end;">
                                         <img src="~/Hinh/HangHoa/@item.ChiTietHd[0].Hinh" style="width: 80px; height: 80px;" alt="@item.ChiTietHd[0].TenHh">
                                         <p>@item.ChiTietHd[0].TenHh</p>
                                     </a>
 
-                                    <a href="#" style="display: inline-flex; align-items: flex-end;">
+                                    <a asp-action="Detail" asp-controller="Order" asp-route-id="@item.MaHd" style="display: inline-flex; align-items: flex-end;">
                                         <img src="~/Hinh/HangHoa/@item.ChiTietHd[1].Hinh" style="width: 80px; height: 80px;" alt="@item.ChiTietHd[1].TenHh">
                                         <p>
                                             @item.ChiTietHd[0].TenHh
                                         </p>
                                     </a>
 
-                                    <a href="#" >
+                                    <a asp-action="Detail" asp-controller="Order" asp-route-id="@item.MaHd">
                                         <p style="font-weight: bold">+@(item.ChiTietHd.Count - 2) more</p>
                                         <p style="font-weight: bold">...</p>
 
@@ -77,9 +77,9 @@
                                 <p class="mb-0 mt-4">@item.TongTien $</p>
                             </td>
                             <td>
-                                <button class="btn btn-md rounded-circle bg-light border mt-4">
+                                <a asp-action="Detail" asp-controller="Order" asp-route-id="@item.MaHd" class="btn btn-md rounded-circle bg-light border mt-4">
                                     Chi tiết
-                                </button>
+                                </a>
                             </td>
                         </tr>
 
