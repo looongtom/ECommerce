@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GfXLvev7OTvXI+N4SVYJ4D1y8SQ/qe7bdmygG4H3vRU=",
+  "Hash": "0S/tr7R5j8gm+S4nEAMUE+LiOio8kaXmes1/hEi8ZgM=",
   "Source": "ECommerceMVC",
   "BasePath": "_content/ECommerceMVC",
   "Mode": "Default",
@@ -5727,6 +5727,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\hero-img3.jpg"
+    },
+    {
+      "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\more.png",
+      "SourceId": "ECommerceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
+      "BasePath": "_content/ECommerceMVC",
+      "RelativePath": "img/more.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\more.png"
     },
     {
       "Identity": "D:\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\payment.png",

@@ -1,6 +1,6 @@
-﻿@model IEnumerable<ECommerceMVC.ViewModels.HangHoaVM>
+﻿@using ECommerceMVC.Helpers;
+@model PaginatedList<ECommerceMVC.ViewModels.HangHoaVM>
 
-<h6>Có @Model.Count() sản phẩm</h6>
 
 @foreach (var item in Model)
 {
@@ -17,9 +17,76 @@
                 <p>@item.MoTa</p>
                 <div class="d-flex justify-content-between flex-lg-wrap">
                     <p class="text-dark fs-5 fw-bold mb-0">@item.DonGia $</p>
-                    <a  asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.MaHh" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Cho vào giỏ hàng</a>
+                    <a asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.MaHh" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Cho vào giỏ hàng</a>
                 </div>
             </div>
         </div>
     </div>
 }
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+<div class="col-12">
+    <div class="pagination d-flex justify-content-center mt-5">
+        <a asp-action="Index"
+           asp-route-sortQuery="@ViewData["CurrentSort"]"
+           asp-route-pageNumber="@(Model.PageIndex - 1)"
+           asp-route-querySearch="@ViewData["QuerySearch"]"
+           asp-route-rangeInput="@ViewData["RangeInput"]"
+           asp-route-loai="@ViewData["Loai"]"
+           class="btn btn-default @prevDisabled">&laquo;</a>
+
+
+        @if (Model.PageIndex > 2)
+        {
+            <a asp-action="Index"
+               asp-route-sortQuery="@ViewData["CurrentSort"]"
+               asp-route-pageNumber="@(Model.PageIndex - 2)"
+               asp-route-querySearch="@ViewData["QuerySearch"]"
+               asp-route-rangeInput="@ViewData["RangeInput"]"
+               asp-route-loai="@ViewData["Loai"]"
+               class="rounded">@(Model.PageIndex - 2)</a>
+        }
+        @if (Model.PageIndex > 1)
+        {
+            <a asp-action="Index"
+               asp-route-sortQuery="@ViewData["CurrentSort"]"
+               asp-route-pageNumber="@(Model.PageIndex - 1)"
+               asp-route-querySearch="@ViewData["QuerySearch"]"
+               asp-route-rangeInput="@ViewData["RangeInput"]"
+               asp-route-loai="@ViewData["Loai"]"
+               class="rounded">@(Model.PageIndex - 1)</a>
+        }
+        <a href="#" class="active rounded">@(Model.PageIndex)</a>
+
+        @if (Model.PageIndex + 1 <= Model.TotalPages)
+        {
+            <a asp-action="Index"
+               asp-route-sortQuery="@ViewData["CurrentSort"]"
+               asp-route-pageNumber="@(Model.PageIndex + 1)"
+               asp-route-querySearch="@ViewData["QuerySearch"]"
+               asp-route-rangeInput="@ViewData["RangeInput"]"
+               asp-route-loai="@ViewData["Loai"]"
+               class="rounded">@(Model.PageIndex + 1)</a>
+        }
+        @if (Model.PageIndex + 2 <= Model.TotalPages)
+        {
+            <a asp-action="Index"
+               asp-route-sortQuery="@ViewData["CurrentSort"]"
+               asp-route-pageNumber="@(Model.PageIndex + 2)"
+               asp-route-querySearch="@ViewData["QuerySearch"]"
+               asp-route-rangeInput="@ViewData["RangeInput"]"
+               asp-route-loai="@ViewData["Loai"]"
+               class="rounded">@(Model.PageIndex + 2)</a>
+        }
+
+        <a asp-action="Index"
+           asp-route-sortQuery="@ViewData["CurrentSort"]"
+           asp-route-pageNumber="@(Model.PageIndex + 1)"
+           asp-route-querySearch="@ViewData["QuerySearch"]"
+           asp-route-rangeInput="@ViewData["RangeInput"]"
+           asp-route-loai="@ViewData["Loai"]"
+           class="btn btn-default @nextDisabled">&raquo;</a>
+    </div>
+</div>

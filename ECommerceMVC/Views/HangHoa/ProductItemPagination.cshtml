@@ -1,10 +1,9 @@
 ﻿@using ECommerceMVC.Helpers;
 @model PaginatedList<ECommerceMVC.ViewModels.HangHoaVM>
 @{
-	ViewData["Title"] = "Danh sách sản phẩm";
-	Layout = "_DanhSachHangHoa";
+    ViewBag.Title = "Danh sách sản phẩm";
 }
-@* @await Html.PartialAsync("ProductItemPagination",Model) *@
+
 
 @foreach (var item in Model)
 {

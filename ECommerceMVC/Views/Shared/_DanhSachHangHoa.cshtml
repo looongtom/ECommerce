@@ -20,24 +20,24 @@
                 <div class="row g-4">
                     <div class="col-xl-3">
                         @* <form name="Index" asp-action="Index" asp-controller="HangHoa">
-                            <div class="input-group w-100 mx-auto d-flex">
-                                 @{
-                                if (query != "")
-                                {
-                                <input type="search" class="form-control p-3" aria-describedby="searchButton" name="query" id="searchText">
+                        <div class="input-group w-100 mx-auto d-flex">
+                        @{
+                        if (query != "")
+                        {
+                        <input type="search" class="form-control p-3" aria-describedby="searchButton" name="query" id="searchText">
 
-                                <text>value="@query"</text>
-                                }
-                                else
-                                {
-                                <input type="search" class="form-control p-3" aria-describedby="searchButton" name="query" id="searchText">
+                        <text>value="@query"</text>
+                        }
+                        else
+                        {
+                        <input type="search" class="form-control p-3" aria-describedby="searchButton" name="query" id="searchText">
 
-                                <text>placeholder="Search"</text>
-                                }
-                                } 
-                                <input type="search" class="form-control p-3" aria-describedby="searchButton" name="query" id="searchText">
-                                <span id="searchButton" class="input-group-text p-3" onclick="SearchForm.submit()"><i class="fa fa-search"></i></span>
-                            </div>
+                        <text>placeholder="Search"</text>
+                        }
+                        }
+                        <input type="search" class="form-control p-3" aria-describedby="searchButton" name="query" id="searchText">
+                        <span id="searchButton" class="input-group-text p-3" onclick="SearchForm.submit()"><i class="fa fa-search"></i></span>
+                        </div>
                         </form> *@
                         @await Html.PartialAsync("_TimKiemPanel")
 
@@ -46,7 +46,12 @@
                     <div class="col-xl-3">
                         <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
                             <label for="fruits">Lọc:</label>
-                            <form asp-action="Index" asp-controller="HangHoa">
+                            <form asp-action="Index"
+                                  asp-controller="HangHoa"
+                                  asp-route-sortQuery="@ViewData["CurrentSort"]"
+                                  asp-route-querySearch="@ViewData["QuerySearch"]"
+                                  asp-route-rangeInput="@ViewData["RangeInput"]"
+                                  asp-route-loai="@ViewData["Loai"]">
                                 <select id="roomList" name="sortQuery" class="border-0 form-select-sm bg-light me-3" onchange="this.form.submit()">
                                     <option></option>
                                     <option value="price-asc">Giá thấp đến cao</option>

@@ -1,4 +1,5 @@
 ﻿using ECommerceMVC.Data;
+using ECommerceMVC.Helpers;
 using ECommerceMVC.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,14 +11,23 @@ namespace ECommerceMVC.Controllers
         private readonly Hshop2023Context db;
 
         public HangHoaController(Hshop2023Context context) { db = context; }
-        public IActionResult Index(int? loai, string? querySearch, int? rangeInput, string? sortQuery)
+        public async Task<IActionResult> Index(int? loai, string? querySearch, int? rangeInput, string? sortQuery, int? pageNumber)
         {
             string? querySearchSesion = HttpContext.Session.GetString("querySearch");
             int? rangeInputSesion = HttpContext.Session.GetInt32("rangeInput");
             string? sortQuerySesion = HttpContext.Session.GetString("sortQuery");
             int? loaiSession = HttpContext.Session.GetInt32("loai");
 
+            ViewData["CurrentSort"] = sortQuery;
+            ViewData["RangeInput"] = rangeInput;
+            ViewData["QuerySearch"] = querySearch;
+            ViewData["Loai"] = loai;
+
             var hangHoas = db.HangHoas.AsQueryable();
+            if (querySearch != null)
+            {
+                pageNumber = 1;
+            }
 
             if (loai != 0)
             {
@@ -86,140 +96,49 @@ namespace ECommerceMVC.Controllers
                 TenLoai = p.MaLoaiNavigation.TenLoai
             });
             if (loai.HasValue) HttpContext.Session.SetInt32("loai", loai ?? 0);
-            return View(result);
+            int pageSize= 6;
+            return View(await PaginatedList<HangHoaVM>.CreateAsync(result.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
-        //      public IActionResult Search(string? query)
-        //      {
-        //          int? rangeInput = HttpContext.Session.GetInt32("rangeInput");
-        //          string? sortQuery = HttpContext.Session.GetString("sortQuery");
-        //          int? loai = HttpContext.Session.GetInt32("loai");
+        public async Task<ActionResult> Search(string sortOrder,string currentFilter,string searchString,int? pageNumber)
+        {
+            ViewBag.CurrentSort = sortOrder;
+            ViewBag.NameSortParm = string.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.PriceSortParm = sortOrder == "price_asc" ? "price_desc" : "price_asc";
+            if(searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+            ViewBag.CurrentFilter = searchString;
 
-        //          var hangHoas = db.HangHoas.AsQueryable();
-
-        //          if (loai.HasValue)
-        //          {
-        //                 hangHoas = hangHoas.Where(hh => hh.MaLoai == loai.Value);
-        //          }
-        //          if (rangeInput.HasValue)
-        //          {
-        //              hangHoas = hangHoas.Where(p => p.DonGia >= rangeInput);
-        //          }
-        //          if (sortQuery != null)
-        //          {
-        //              if (sortQuery == "price-asc")
-        //              {
-        //                  hangHoas = hangHoas.OrderBy(p => p.DonGia);
-        //              }
-        //              else if (sortQuery == "price-desc")
-        //              {
-        //                  hangHoas = hangHoas.OrderByDescending(p => p.DonGia);
-        //              }
-        //          }
-
-        //          if (query != null)
-        //          {
-        //              hangHoas = hangHoas.Where(p => p.TenHh.Contains(query));
-        //          }
-
-        //          var result = hangHoas.Select(p => new HangHoaVM
-        //          {
-        //              MaHh = p.MaHh,
-        //              TenHh = p.TenHh,
-        //              DonGia = p.DonGia ?? 0,
-        //              Hinh = p.Hinh ?? "",
-        //              MoTa = p.MoTaDonVi ?? "",
-        //              TenLoai = p.MaLoaiNavigation.TenLoai
-        //          });
-        //          HttpContext.Session.SetString("querySearch", query);
-        //          return View(result);
-        //      }
-
-        //      public IActionResult FilterByPrice(int rangeInput)
-        //      {
-        //          string? querySearch = HttpContext.Session.GetString("querySearch");
-        //          string? sortQuery = HttpContext.Session.GetString("sortQuery");
-        //          int? loai = HttpContext.Session.GetInt32("loai");
-
-        //          var hangHoas =db.HangHoas.Where(p=>p.DonGia >= rangeInput);
-
-        //          if (loai.HasValue)
-        //          {
-        //              hangHoas = hangHoas.Where(hh => hh.MaLoai == loai.Value);
-        //          }
-        //          if (sortQuery != null)
-        //          {
-        //              if (sortQuery == "price-asc")
-        //              {
-        //                  hangHoas = hangHoas.OrderBy(p => p.DonGia);
-        //              }
-        //              else if (sortQuery == "price-desc")
-        //              {
-        //                  hangHoas = hangHoas.OrderByDescending(p => p.DonGia);
-        //              }
-        //          }
-        //          if (querySearch != null)
-        //          {
-        //              hangHoas = hangHoas.Where(p => p.TenHh.Contains(querySearch));
-        //          }
-
-        //          var result=hangHoas.Select(p=>new HangHoaVM
-        //          {
-        //		MaHh=p.MaHh,
-        //		TenHh=p.TenHh,
-        //		DonGia=p.DonGia ?? 0,
-        //		Hinh=p.Hinh ?? "",
-        //		MoTa=p.MoTaDonVi ?? "",
-        //		TenLoai=p.MaLoaiNavigation.TenLoai
-        //	});
-        //          HttpContext.Session.SetInt32("rangeInput", rangeInput);
-        //           return View("Search",result);
-        //      }
-
-        //      public IActionResult Sort(string? sortQuery)
-        //      {
-        //          string? querySearch = HttpContext.Session.GetString("querySearch");
-        //          int? loai = HttpContext.Session.GetInt32("loai");
-        //          int? rangeInput = HttpContext.Session.GetInt32("rangeInput");
-
-        //          var hangHoas = db.HangHoas.AsQueryable();
-        //          if(loai.HasValue)
-        //          {
-        //              hangHoas = hangHoas.Where(hh => hh.MaLoai == loai.Value);
-        //          }
-        //          if(rangeInput.HasValue)
-        //          {
-        //              hangHoas = hangHoas.Where(p => p.DonGia >= rangeInput);
-        //          }
-        //          if(querySearch != null)
-        //          {
-        //              hangHoas = hangHoas.Where(p => p.TenHh.Contains(querySearch));
-        //          }
-
-        //          if (sortQuery != null)
-        //          {
-        //              if(sortQuery == "price-asc")
-        //              {
-        //                  hangHoas = hangHoas.OrderBy(p => p.DonGia);
-        //              }
-        //              else if(sortQuery == "price-desc")
-        //              {
-        //                  hangHoas = hangHoas.OrderByDescending(p => p.DonGia);
-        //              }
-        //          }
-        //          var result = hangHoas.Select(p => new HangHoaVM
-        //          {
-        //              MaHh = p.MaHh,
-        //              TenHh = p.TenHh,
-        //              DonGia = p.DonGia ?? 0,
-        //              Hinh = p.Hinh ?? "",
-        //              MoTa = p.MoTaDonVi ?? "",
-        //              TenLoai = p.MaLoaiNavigation.TenLoai
-        //          });
-        //          HttpContext.Session.SetString("sortQuery", sortQuery);
-        //          return View("Search", result);
-        //}
-
+            var hangHoas = db.HangHoas.AsQueryable();
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                hangHoas = hangHoas.Where(s => s.TenHh.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    hangHoas = hangHoas.OrderByDescending(s => s.TenHh);
+                    break;
+                case "price_asc":
+                    hangHoas = hangHoas.OrderBy(s => s.DonGia);
+                    break;
+                case "price_desc":
+                    hangHoas = hangHoas.OrderByDescending(s => s.DonGia);
+                    break;
+                default:
+                    hangHoas = hangHoas.OrderBy(s => s.TenHh);
+                    break;
+            }
+            int pageSize = 6;
+            return View(await PaginatedList<HangHoa>.CreateAsync(hangHoas.AsNoTracking(), pageNumber ?? 1, pageSize));
+        }
+       
         public IActionResult Detail(int id)
         {
             var data = db.HangHoas
